@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
     return (
         <div className="flex flex-col">
@@ -7,8 +5,12 @@ export default function Home() {
                 <a className="text-white text-thin text-8xl" href="">
                     <h1 className="font-extralight">garaji</h1>
                 </a>
-                <a className="text-white text-thin" href="">about us</a>
-                <a className="text-white text-thin" href="">products</a>
+                <a className="text-white text-thin" href="">
+                    about us
+                </a>
+                <a className="text-white text-thin" href="">
+                    products
+                </a>
             </nav>
 
             <section id="hero" className="flex h-svh">

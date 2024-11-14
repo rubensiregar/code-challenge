@@ -17,10 +17,6 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
                   <img className="" src="./img/gallery.webp" alt="" />
                   <h2 className="font-semibold">gallery</h2>
               </div>
-              <div className="flex flex-col rounded-lg w-1/5 p-2 overflow-hidden bg-white">
-                  <img src="./img/step.webp" alt="" />
-                  <h2 className="font-semibold overflow-hidden">how to</h2>
-              </div>
           </div>
       </section>
   );

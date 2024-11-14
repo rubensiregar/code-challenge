@@ -1,18 +1,19 @@
 import Image from "next/image";
 import * as React from "react";
+import { Breaker } from "./Breaker";
 
-interface ICardServiceProps {
+interface ICardProductProps {
     title: string;
     price: string;
-    eta: string;
+    grade: string;
     src: string;
     alt: string;
 }
 
-const CardService: React.FunctionComponent<ICardServiceProps> = ({
+const CardProduct: React.FunctionComponent<ICardProductProps> = ({
     title,
     price,
-    eta,
+    grade,
     src,
     alt,
 }) => {
@@ -28,16 +29,16 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
                     objectPosition="top"
                 />
             </div>
+            {/*  */}
             <div className="flex flex-col">
                 <h1 className="text-2xl font-thin ">{title}</h1>
                 <h2 className="text-xl">RP {price}</h2>
                 <h2 className="text-sm font-medium text-gray-500">
-                    Estimated Build Duration:
-                    <span className="text-orange-400"> {eta} days</span>
+                    [<span className="text-orange-400"> {grade}</span>]
                 </h2>
             </div>
         </div>
     );
 };
 
-export default CardService;
+export default CardProduct;

@@ -18,7 +18,7 @@ const CardDesc: React.FunctionComponent<ICardDescProps> = ({
 }) => {
     const IniGambar = () => {
         return (
-            <div className="relative min-h-48 md:w-1/2">
+            <div className="relative h-80 md:w-2/5 md:h-[600px] ">
                 <Image
                     src={src}
                     alt={alt}
@@ -33,22 +33,24 @@ const CardDesc: React.FunctionComponent<ICardDescProps> = ({
     const IniTipografi = () => {
         return (
             <div className="flex flex-col gap-4 md:w-1/2 items-center justify-center">
-                <h1 className="uppercase text-4xl font-bold">{title}</h1>
-                <p>{desc}</p>
+                <h1 className="text-4xl md:text-8xl font-semibold uppercase">
+                    {title}
+                </h1>
+                <p className="text-xl md:text-2xl font-extralight">{desc}</p>
             </div>
         );
     };
 
     if (orientation === "right" || !orientation) {
         return (
-            <div className="flex flex-col md:flex-row md:h-80 gap-8 justify-center w-full bg-violet-100 p-12 rounded-lg">
+            <div className="flex justify-evenly md:flex-row md:gap-12 gap-4 p-8 w-full bg-violet-100 md:p-12 rounded-lg flex-col">
                 <IniGambar />
                 <IniTipografi />
             </div>
         );
     } else {
         return (
-            <div className="flex flex-col-reverse md:flex-row md:h-80 gap-8 justify-center w-full bg-violet-100 p-12 rounded-lg">
+            <div className="flex justify-evenly md:flex-row md:gap-12 gap-4 p-8 w-full bg-violet-100 md:p-12 rounded-lg flex-col-reverse">
                 <IniTipografi />
                 <IniGambar />
             </div>

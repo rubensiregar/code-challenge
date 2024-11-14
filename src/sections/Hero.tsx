@@ -1,9 +1,7 @@
 import * as React from 'react';
 
-interface IHeroSectionProps {
-}
 
-const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
+const HeroSection: React.FunctionComponent = () => {
   return (
       <section id="hero" className="flex h-svh bg-violet-200 items-end">
           <img

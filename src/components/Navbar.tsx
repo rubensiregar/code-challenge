@@ -1,9 +1,7 @@
 import * as React from "react";
 import MenuButton from "./MenuButton";
 
-interface INavbarProps {}
-
-const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
+const Navbar: React.FunctionComponent = () => {
     return (
         <nav className="flex justify-between gap-8 py-6 px-20">
             <a

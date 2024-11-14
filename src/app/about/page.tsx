@@ -1,9 +1,8 @@
 import { Breaker } from "@/components/Breaker";
 import * as React from "react";
 
-interface IAboutPageProps {}
 
-const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
+const AboutPage: React.FunctionComponent = () => {
     return <div>
         <Breaker title="so what is garaji"/>
         <Breaker title="you sure already know why you need us"/>

@@ -1,12 +1,7 @@
 import CardDesc from "@/components/CardDesc";
-import Image from "next/image";
 import * as React from "react";
 
-interface IOverviewSectionProps {}
-
-const OverviewSection: React.FunctionComponent<IOverviewSectionProps> = (
-    props
-) => {
+const OverviewSection: React.FunctionComponent = () => {
     return (
         <section className="p-8 md:p-20 space-y-12">
             <CardDesc

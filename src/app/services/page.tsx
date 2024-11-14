@@ -3,7 +3,7 @@ import * as React from "react";
 import { addons, services } from "./servicesList";
 import { Breaker } from "@/components/Breaker";
 
-const printServices = (items: {}[]) => {
+const printServices = (items: any[]) => {
     return items.map((item: any, index: number) => {
         return (
             <CardService

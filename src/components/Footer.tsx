@@ -1,7 +1,7 @@
 import * as React from "react";
 import MenuButton from "./MenuButton";
 
-const Footer: React.FunctionComponent = (props) => {
+const Footer: React.FunctionComponent = () => {
     return (
         <div>
             <div className="flex flex-col h-auto">

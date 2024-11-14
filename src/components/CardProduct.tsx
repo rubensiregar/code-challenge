@@ -1,6 +1,5 @@
 import Image from "next/image";
 import * as React from "react";
-import { Breaker } from "./Breaker";
 
 interface ICardProductProps {
     title: string;

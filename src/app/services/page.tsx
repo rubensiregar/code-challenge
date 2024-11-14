@@ -1,9 +1,9 @@
 import CardService from "@/components/CardService";
 import * as React from "react";
-import { addons, services } from "./servicesList";
+import { addons, IService, services } from "./servicesList";
 import { Breaker } from "@/components/Breaker";
 
-const printServices = (items: any[]) => {
+const printServices = (items: IService[]) => {
     return items.map((item: any, index: number) => {
         return (
             <CardService

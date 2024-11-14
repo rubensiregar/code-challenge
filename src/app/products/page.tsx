@@ -1,9 +1,10 @@
 import { Breaker } from "@/components/Breaker";
 import CardProduct from "@/components/CardProduct";
 import * as React from "react";
-import { kits, supplies } from "./productsList";
+import { IProduct, kits, supplies } from "./productsList";
 
-const printProducts = (items: any[]) => {
+
+const printProducts = (items: IProduct[]) => {
     return items.map((item: any, index: number) => {
         return (
             <CardProduct

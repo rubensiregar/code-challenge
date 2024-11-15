@@ -11,7 +11,7 @@ export const services: IService[] = [
         title: "[MUSUME] Straight Build",
         price: "240.000",
         eta: "7",
-        src: "/img/stand/stand-5.jpg",
+        src: "/img/stand/stand-5.webp",
         alt: "Straight Build",
     },
     {

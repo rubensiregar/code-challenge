@@ -3,8 +3,7 @@ import CardProduct from "@/components/CardProduct";
 import * as React from "react";
 import { IProduct, kits, supplies } from "./productsList";
 
-
-const printProducts = (items: IProduct[]) => {
+const printProducts = (items: (IProduct | unknown)[]) => {
     return items.map((item: any, index: number) => {
         return (
             <CardProduct

@@ -26,6 +26,7 @@ const CardProduct: React.FunctionComponent<ICardProductProps> = ({
                     alt={alt}
                     className="rounded-md"
                     objectPosition="top"
+                    quality={40}
                 />
             </div>
             {/*  */}

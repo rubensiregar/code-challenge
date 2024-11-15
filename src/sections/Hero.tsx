@@ -8,7 +8,7 @@ const HeroSection: React.FunctionComponent = () => {
                 quality={40}
                 src="/img/herooo.webp"
                 alt="hero"
-                objectFit="cover"
+                objectFit="cover"       
                 fill
             />
             s{" "}

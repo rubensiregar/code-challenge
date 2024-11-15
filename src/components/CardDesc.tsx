@@ -33,7 +33,7 @@ const CardDesc: React.FunctionComponent<ICardDescProps> = ({
     const IniTipografi = () => {
         return (
             <div className="flex flex-col gap-4 md:w-1/2 items-center justify-center">
-                <h1 className="text-4xl md:text-8xl font-semibold uppercase">
+                <h1 className="text-4xl md:text-6xl lg:text-8xl font-semibold uppercase">
                     {title}
                 </h1>
                 <p className="text-xl md:text-2xl font-extralight">{desc}</p>

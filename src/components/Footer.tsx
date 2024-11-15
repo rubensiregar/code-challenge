@@ -4,7 +4,7 @@ import FooterButton from "./FooterButton";
 
 const Footer: React.FunctionComponent = () => {
     return (
-        <div className="flex flex-col gap-8 p-4 md:p-20 md:flex-row items-center text-white bg-violet-400">
+        <div className="flex flex-col gap-8 p-4 md:p-20 md:flex-row items-center text-white bg-violet-500">
             <Link
                 className="uppercase px-4 text-thin text-3xl font-extralight hover:text-orange-200 transition ease-in-out delay-100"
                 href="/"

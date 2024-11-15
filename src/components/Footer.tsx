@@ -20,17 +20,17 @@ const Footer: React.FunctionComponent = () => {
                 </div>
                 <div className="flex flex-col h-auto gap-2">
                     <FooterButton
-                        label="Whatsapp +6289--------"
+                        label="WA +6289--------"
                         haref="https://wa.me/628982257484"
                         target="_blank"
                     />
                     <FooterButton
-                        label="Instagram @garaji.grade"
+                        label="IG @garaji.grade"
                         haref="https://www.instagram.com/garaji.grade/"
                         target="_blank"
                     />
                     <FooterButton
-                        label="Tokopedia Garage Grade"
+                        label="TP Garage Grade"
                         haref="https://www.tokopedia.com/garagegrade"
                         target="_blank"
                     />

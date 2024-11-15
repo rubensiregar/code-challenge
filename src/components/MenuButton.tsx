@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 
 interface IMenuButtonProps {
@@ -10,12 +11,9 @@ const MenuButton: React.FunctionComponent<IMenuButtonProps> = ({
     haref,
 }) => {
     return (
-        <a
-            className="text-lg text-thin py-2 px-6 rounded-xl min-w-32 text-center hover:text-violet-500 transition ease-in-out delay-100"
-            href={haref}
-        >
-            {label}
-        </a>
+        <div>
+            <Link href={haref}>{label}</Link>
+        </div>
     );
 };
 

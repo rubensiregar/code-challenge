@@ -1,23 +1,12 @@
-import * as React from 'react';
-
+import Image from "next/image";
+import * as React from "react";
 
 const HeroSection: React.FunctionComponent = () => {
-  return (
-      <section id="hero" className="flex h-svh bg-violet-200 items-end">
-          <img
-              className="absolute z-0 w-full h-screen object-cover "
-              src="./img/hero.webp"
-              alt="hero"
-          />
-
-          <div className="flex items-end absolute p-8 gap-8">
-              <div className="flex flex-col rounded-lg w-1/5 p-2 bg-white">
-                  <img className="" src="./img/gallery.webp" alt="" />
-                  <h2 className="font-semibold">gallery</h2>
-              </div>
-          </div>
-      </section>
-  );
+    return (
+        <section id="hero" className="h-svh bg-violet-200 relative">
+            <Image src="/img/hero.webp" alt="hero" objectFit="cover" fill />
+s        </section>
+    );
 };
 
 export default HeroSection;

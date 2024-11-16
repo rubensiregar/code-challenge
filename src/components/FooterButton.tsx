@@ -16,7 +16,7 @@ const FooterButton: React.FunctionComponent<IFooterButtonProps> = ({
         <div>
             <Link
                 href={haref}
-                className="text-md md:text-lg text-thin py-2 px-4 min-w-32 text-center hover:text-orange-200 transition ease-in-out delay-100"
+                className="text-md md:text-lg font-thin py-2 text-center hover:text-orange-200 transition ease-in-out delay-100"
                 target={target}
             >
                 {label}

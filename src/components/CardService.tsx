@@ -17,7 +17,7 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
     alt,
 }) => {
     return (
-        <div className="flex flex-col  gap-4 min-w-60 max-w-1/4 min-h-96  bg-violet-100 p-4 shadow-md rounded-md">
+        <div className="flex flex-col  gap-4 min-w-60 max-w-1/4 h-[420px] bg-violet-100 p-4 shadow-md rounded-md">
             <div className="relative w-full h-3/4 rounded-md">
                 <Image
                     src={src}

@@ -5,8 +5,8 @@ const HeroSection: React.FunctionComponent = () => {
     return (
         <section id="hero" className="h-svh bg-violet-200 relative">
             <Image
-                quality={40}
-                src="/img/herooo.webp"
+                quality={100}
+                src="/img/hero/hero-4.jpg"
                 alt="hero"
                 objectFit="cover"       
                 fill

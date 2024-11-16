@@ -6,7 +6,7 @@ export interface IBreakerProps {
 
 export function Breaker({ title }: IBreakerProps) {
     return (
-        <div className="w-full text-4xl px-12 py-4 text-center bg-violet-200 uppercase font-thin">
+        <div className="mt-24 w-full text-4xl px-12 py-4 text-center bg-violet-200 uppercase font-thin">
             {title}
         </div>
     );

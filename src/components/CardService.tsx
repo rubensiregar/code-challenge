@@ -38,7 +38,7 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
                 <h2 className="text-xl">RP {price}</h2>
                 <h2 className="text-sm font-medium text-gray-800">
                     Estimated Build Duration:
-                    <span className="text-orange-400"> {eta} days</span>
+                    <span className="text-orange-800"> {eta} days</span>
                 </h2>
             </div>
         </div>

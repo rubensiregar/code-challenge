@@ -1,6 +1,9 @@
 import * as React from "react";
 import Link from "next/link";
 import FooterButton from "./FooterButton";
+import { FaWhatsapp } from "react-icons/fa6";
+import { CiInstagram } from "react-icons/ci";
+import { LuShoppingBasket } from "react-icons/lu";
 
 const Footer: React.FunctionComponent = () => {
     return (
@@ -12,28 +15,37 @@ const Footer: React.FunctionComponent = () => {
                 garaji
             </Link>
             <div className="flex flex-row w-full justify-evenly md:flex-row ">
-                <div className="flex flex-col gap-4 md:items-start">
+                <div className="flex flex-col gap-6 md:items-start">
                     <FooterButton label="services" haref="/services" />
                     <FooterButton label="products" haref="/products" />
                     <FooterButton label="about us" haref="/about" />
                     <FooterButton label="our teams" haref="/teams" />
                 </div>
-                <div className="flex flex-col gap-4 md:items-start">
-                    <FooterButton
-                        label="WA +6289--------"
-                        haref="https://wa.me/628982257484"
-                        target="_blank"
-                    />
-                    <FooterButton
-                        label="IG @garaji.grade"
-                        haref="https://www.instagram.com/garaji.grade/"
-                        target="_blank"
-                    />
-                    <FooterButton
-                        label="TP Garage Grade"
-                        haref="https://www.tokopedia.com/garagegrade"
-                        target="_blank"
-                    />
+                <div className="flex flex-col gap-6 md:items-start">
+                    <div className="flex gap-2 items-center">
+                        <FaWhatsapp className="size-6" />
+                        <FooterButton
+                            label="Whatsapp"
+                            haref="https://wa.me/628982257484"
+                            target="_blank"
+                        />
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <CiInstagram className="size-6" />
+                        <FooterButton
+                            label="@garaji.grade"
+                            haref="https://www.instagram.com/garaji.grade/"
+                            target="_blank"
+                        />
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <LuShoppingBasket className="size-6" />
+                        <FooterButton
+                            label="Garage Grade"
+                            haref="https://www.tokopedia.com/garagegrade"
+                            target="_blank"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

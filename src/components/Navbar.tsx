@@ -67,6 +67,9 @@ const Navbar: React.FunctionComponent = () => {
                     <div onClick={handleSideToggle}>
                         <MenuButton label="our teams" haref="/teams" />
                     </div>
+                    <div onClick={handleSideToggle}>
+                        <MenuButton label="contacts" haref="/contacts" />
+                    </div>
                 </div>
             </aside>
 

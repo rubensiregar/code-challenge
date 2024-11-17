@@ -39,7 +39,7 @@ const CardProduct: React.FunctionComponent<ICardProductProps> = ({
                 <h1 className="text-2xl font-thin ">{title}</h1>
                 <h2 className="text-xl">RP {price}</h2>
                 <h2 className="text-sm font-medium text-gray-800">
-                    [<span className="text-orange-600"> {grade}</span>]
+                    [<span className="text-orange-800"> {grade}</span>]
                 </h2>
             </div>
         </div>

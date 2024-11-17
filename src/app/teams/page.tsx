@@ -5,7 +5,7 @@ import axios from "axios";
 import CardMember from "@/components/CardMember";
 
 const TeamsPage = () => {
-    const URL = "https://randomuser.me/api/?results=5";
+    const URL = "https://randomuser.me/api/?results=8";
     const [users, setUsers] = React.useState([]);
 
     React.useEffect(() => {
@@ -16,10 +16,10 @@ const TeamsPage = () => {
     console.log("DATA RANDOM", users);
 
     return (
-        <div>
+        <div className="min-h-[75svh]">
             <Breaker title="meet our team members" />
 
-            <section className="p-12 gap-8 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+            <section className="p-12 gap-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                 {users.map((u: any, i: number) => (
                     <CardMember
                         src={u.picture.thumbnail}

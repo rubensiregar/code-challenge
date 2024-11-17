@@ -4,7 +4,7 @@ import * as React from "react";
 
 const ContactsPage: React.FunctionComponent = () => {
     return (
-        <div>
+        <div className="min-h-[75svh]">
             <Breaker title="Contact Us" />
             <section className="flex flex-col gap-12 p-20 items-center">
                 <CardContact

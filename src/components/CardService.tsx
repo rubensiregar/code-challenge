@@ -31,6 +31,7 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
                     alt={alt}
                     className="rounded-md"
                     objectPosition="top"
+                    quality={10}
                 />
             </div>
             <div className="flex flex-col">

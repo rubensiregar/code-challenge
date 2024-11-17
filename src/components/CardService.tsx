@@ -3,7 +3,7 @@ import * as React from "react";
 
 interface ICardServiceProps {
     title: string;
-    price: string;
+    price?: string;
     eta: string;
     src: string;
     alt: string;
@@ -35,7 +35,11 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
             </div>
             <div className="flex flex-col">
                 <h1 className="text-2xl font-thin ">{title}</h1>
-                <h2 className="text-xl">RP {price}</h2>
+                {price ? (
+                    <h2 className="text-xl">RP {price}</h2>
+                ) : (
+                    <p className="hidden" />
+                )}
                 <h2 className="text-sm font-medium text-gray-800">
                     Estimated Build Duration:
                     <span className="text-orange-800"> {eta} days</span>

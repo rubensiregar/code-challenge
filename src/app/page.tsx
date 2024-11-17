@@ -1,5 +1,6 @@
 import HeroSection from "@/sections/Hero";
 import OverviewSection from "@/sections/Overview";
+import ServiceAndProdeuctsSection from "@/sections/ServicesAndProducts";
 import TestimonialSection from "@/sections/Testimonials";
 
 export default function Home() {
@@ -7,7 +8,8 @@ export default function Home() {
         <div className="flex flex-col">
             <HeroSection />
             <OverviewSection />
-            <TestimonialSection/>
+            <ServiceAndProdeuctsSection />
+            <TestimonialSection />
         </div>
     );
 }

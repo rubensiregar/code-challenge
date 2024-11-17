@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WAButton from "@/components/WAButton";
+import NavPro from "@/components/NavPro";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -31,7 +32,7 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
             >
-                <div className="fixed w-screen z-10 bg-white top-0">
+                <div className="fixed w-screen z-50 bg-white top-0">
                     <Navbar />
                 </div>
                 <WAButton />

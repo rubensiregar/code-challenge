@@ -14,7 +14,7 @@ const MenuButton: React.FunctionComponent<IMenuButtonProps> = ({
         <div>
             <Link
                 href={haref}
-                className="text-lg font-thin py-2 px-4 min-w-32 text-center hover:text-violet-500 transition ease-in-out delay-100"
+                className="text-sm md:text-lg font-thin py-2 px-2 min-w-32 text-center hover:text-violet-500 transition ease-in-out delay-100"
             >
                 {label}
             </Link>

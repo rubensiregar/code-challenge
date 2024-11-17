@@ -44,14 +44,14 @@ const CardDesc: React.FunctionComponent<ICardDescProps> = ({
 
     if (orientation === "right" || !orientation) {
         return (
-            <div className="flex justify-evenly md:flex-row md:gap-12 gap-4 p-8 w-full bg-violet-100 md:p-12 rounded-lg flex-col">
+            <div className="flex justify-evenly md:flex-row md:gap-12 gap-4 p-8 w-full bg-violet-100 md:p-12 rounded-lg shadow-2xl flex-col">
                 <IniGambar />
                 <IniTipografi />
             </div>
         );
     } else {
         return (
-            <div className="flex justify-evenly md:flex-row md:gap-12 gap-4 p-8 w-full bg-violet-100 md:p-12 rounded-lg flex-col-reverse">
+            <div className="flex justify-evenly md:flex-row md:gap-12 gap-4 p-8 w-full bg-violet-100 md:p-12 rounded-lg shadow-2xl flex-col-reverse">
                 <IniTipografi />
                 <IniGambar />
             </div>

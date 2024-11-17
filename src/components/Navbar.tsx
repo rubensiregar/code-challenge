@@ -4,7 +4,7 @@ import MenuButton from "./MenuButton";
 import Link from "next/link";
 
 const Navbar: React.FunctionComponent = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
+    const [isOpen, setIsOpen] = React.useState<boolean>(false);
     const handleSideToggle = () => {
         setIsOpen(!isOpen);
     };

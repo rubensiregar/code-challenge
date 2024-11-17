@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WAButton from "@/components/WAButton";
-import NavPro from "@/components/NavPro";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",

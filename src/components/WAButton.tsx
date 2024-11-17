@@ -1,5 +1,4 @@
 import * as React from "react";
-import FooterButton from "./FooterButton";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 

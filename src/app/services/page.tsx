@@ -1,8 +1,25 @@
 import CardService from "@/components/CardService";
 import * as React from "react";
 import { Breaker } from "@/components/Breaker";
-import { getProducts } from "../products/page";
-import { TypeProductAsset } from "@/types/product-type";
+import {
+    TypeGarajiProductSkeleton,
+    TypeProductAsset,
+} from "@/types/product-type";
+import contentfulClient from "@/lib/contentfulClient";
+
+const getProducts = async () => {
+    console.log("SEBELUM COBA");
+    try {
+        const res =
+            await contentfulClient.getEntries<TypeGarajiProductSkeleton>({
+                content_type: "garajiProduct",
+            });
+        console.log("DATA DARI MANA HAYO\n", res.items);
+        return res;
+    } catch (error) {
+        console.log("SETELAH ERROR");
+    }
+};
 
 const ServicesPage: React.FunctionComponent = async () => {
     const services = await getProducts();

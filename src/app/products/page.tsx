@@ -7,7 +7,7 @@ import {
     TypeProductAsset,
 } from "@/types/product-type";
 
-export const getProducts = async () => {
+const getProducts = async () => {
     console.log("SEBELUM COBA");
     try {
         const res =

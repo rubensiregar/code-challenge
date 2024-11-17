@@ -7,6 +7,7 @@ interface ICardServiceProps {
     eta: string;
     src: string;
     alt: string;
+    idx: number;
 }
 
 const CardService: React.FunctionComponent<ICardServiceProps> = ({
@@ -15,9 +16,13 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
     eta,
     src,
     alt,
+    idx,
 }) => {
     return (
-        <div className="flex flex-col  gap-4 min-w-60 max-w-1/4 h-[420px] bg-violet-100 p-4 shadow-md rounded-md">
+        <div
+            key={idx}
+            className="flex flex-col  gap-4 min-w-60 max-w-1/4 h-[420px] bg-violet-100 p-4 shadow-md rounded-md"
+        >
             <div className="relative w-full h-3/4 rounded-md">
                 <Image
                     src={src}
@@ -33,7 +38,7 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
                 <h2 className="text-xl">RP {price}</h2>
                 <h2 className="text-sm font-medium text-gray-500">
                     Estimated Build Duration:
-                    <span className="text-orange-400"> {eta} days</span>
+                    <span className="text-orange-500"> {eta} days</span>
                 </h2>
             </div>
         </div>

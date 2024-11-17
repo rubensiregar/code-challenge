@@ -1,33 +1,53 @@
 import CardService from "@/components/CardService";
 import * as React from "react";
-import { addons, IService, services } from "./servicesList";
 import { Breaker } from "@/components/Breaker";
+import { getProducts } from "../products/page";
+import { TypeProductAsset } from "@/types/product-type";
 
-const printServices = (items: IService[]) => {
-    return items.map((item: any, index: number) => {
-        return (
-            <CardService
-                key={index}
-                title={item.title}
-                price={item.price}
-                eta={item.eta}
-                src={item.src}
-                alt={item.alt}
-            />
-        );
-    });
-};
-
-const ServicesPage: React.FunctionComponent = () => {
+const ServicesPage: React.FunctionComponent = async () => {
+    const services = await getProducts();
     return (
         <div className="">
             <Breaker title="our services" />
             <section className="grid grid-cols-1 gap-8 p-12 md:grid-cols-2 md:px-20 xl:grid-cols-4">
-                {printServices(services)}
+                {services &&
+                    services.items
+                        ?.filter(
+                            (produk) => produk.fields.alt === "Straight Build"
+                        )
+                        .map((produk, index) => (
+                            <CardService
+                                key={index}
+                                idx={index}
+                                title={produk.fields.title}
+                                eta={produk.fields.grade}
+                                price={produk.fields.price.toLocaleString()}
+                                src={`https:${
+                                    (produk.fields.image as TypeProductAsset)
+                                        ?.fields.file.url
+                                }`}
+                                alt={produk.fields.alt}
+                            />
+                        ))}
             </section>
             <Breaker title="add-ons" />
             <section className="grid grid-cols-1 gap-8 p-12 md:grid-cols-2 md:px-20 xl:grid-cols-4">
-                {printServices(addons)}
+                {services &&
+                    services.items
+                        ?.filter((produk) => produk.fields.alt === "Add-ons")
+                        .map((produk, index) => (
+                            <CardService
+                                idx={index}
+                                title={produk.fields.title}
+                                eta={produk.fields.grade}
+                                price={produk.fields.price.toLocaleString()}
+                                src={`https:${
+                                    (produk.fields.image as TypeProductAsset)
+                                        ?.fields.file.url
+                                }`}
+                                alt={produk.fields.alt}
+                            />
+                        ))}
             </section>
         </div>
     );

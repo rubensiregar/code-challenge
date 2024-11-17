@@ -8,6 +8,6 @@ export default nextConfig;
 
 module.exports = {
     images: {
-        domains: ["images.ctfassets.net"],
+        domains: ["images.ctfassets.net", "randomuser.me"],
     },
 };

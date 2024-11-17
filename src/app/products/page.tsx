@@ -17,7 +17,7 @@ const getProducts = async () => {
         console.log("DATA DARI MANA HAYO\n", res.items);
         return res;
     } catch (error) {
-        console.log("SETELAH ERROR");
+        console.log("SETELAH ERROR\n", error);
     }
 };
 

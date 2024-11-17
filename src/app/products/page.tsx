@@ -32,6 +32,7 @@ const ProductsPage: React.FunctionComponent = async () => {
                         ?.filter((produk) => produk.fields.alt === "Model Kit")
                         .map((produk, index) => (
                             <CardProduct
+                                key={index}
                                 idx={index}
                                 title={produk.fields.title}
                                 grade={produk.fields.grade}
@@ -51,6 +52,7 @@ const ProductsPage: React.FunctionComponent = async () => {
                         ?.filter((produk) => produk.fields.alt === "Tool")
                         .map((produk, index) => (
                             <CardProduct
+                                key={index}
                                 idx={index}
                                 title={produk.fields.title}
                                 grade={produk.fields.grade}

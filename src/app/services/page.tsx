@@ -54,6 +54,7 @@ const ServicesPage: React.FunctionComponent = async () => {
                         ?.filter((produk) => produk.fields.alt === "Add-ons")
                         .map((produk, index) => (
                             <CardService
+                                key={index}
                                 idx={index}
                                 title={produk.fields.title}
                                 eta={produk.fields.grade}

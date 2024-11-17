@@ -1,11 +1,7 @@
 "use client";
 import { Breaker } from "@/components/Breaker";
-// import { callAPI } from "@/config/axios";
 import * as React from "react";
-import fetch from "isomorphic-unfetch";
-import { callAPI } from "@/config/axios";
 import axios from "axios";
-import Image from "next/image";
 import CardMember from "@/components/CardMember";
 
 const TeamsPage = () => {

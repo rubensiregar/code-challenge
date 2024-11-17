@@ -35,9 +35,9 @@ const ListTesti: React.FunctionComponent = () => {
                             key={i}
                         >
                             <h1 className="text-xl font-bold italic">
-                                <span>"</span>
+                                <span>&quot;</span>
                                 {t.title}
-                                <span>"</span>
+                                <span>&quot;</span>
                             </h1>
                             <p className="text-lg">
                                 <span>- </span>

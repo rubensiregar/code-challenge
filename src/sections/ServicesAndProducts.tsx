@@ -1,5 +1,4 @@
 import { Breaker } from "@/components/Breaker";
-import CardProduct from "@/components/CardProduct";
 import CardService from "@/components/CardService";
 import contentfulClient from "@/lib/contentfulClient";
 import {
@@ -39,7 +38,7 @@ const ServiceAndProdeuctsSection: React.FunctionComponent = async () => {
                                     produk.fields.alt === "Straight Build"
                             )
                             .map((produk, index) => (
-                                <div className="p-4">
+                                <div key={index} className="p-4">
                                     <CardService
                                         key={index}
                                         idx={index}
@@ -65,11 +64,10 @@ const ServiceAndProdeuctsSection: React.FunctionComponent = async () => {
                     {products &&
                         products.items
                             ?.filter(
-                                (produk) =>
-                                    produk.fields.alt === "Model Kit"
+                                (produk) => produk.fields.alt === "Model Kit"
                             )
                             .map((produk, index) => (
-                                <div className="p-4">
+                                <div key={index} className="p-4">
                                     <CardService
                                         key={index}
                                         idx={index}

@@ -3,7 +3,7 @@ import * as React from "react";
 
 interface ICardProductProps {
     title: string;
-    price: string;
+    price?: string;
     grade: string;
     src: string;
     alt: string;
@@ -38,7 +38,11 @@ const CardProduct: React.FunctionComponent<ICardProductProps> = ({
             {/*  */}
             <div className="flex flex-col">
                 <h1 className="text-2xl font-thin ">{title}</h1>
-                <h2 className="text-xl">RP {price}</h2>
+                {price ? (
+                    <h2 className="text-xl">RP {price}</h2>
+                ) : (
+                    <div className="hidden"></div>
+                )}
                 <h2 className="text-sm font-medium text-gray-800">
                     [<span className="text-orange-800"> {grade}</span>]
                 </h2>

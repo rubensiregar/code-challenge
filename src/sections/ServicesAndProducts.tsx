@@ -1,4 +1,5 @@
 import { Breaker } from "@/components/Breaker";
+import CardProduct from "@/components/CardProduct";
 import CardService from "@/components/CardService";
 import contentfulClient from "@/lib/contentfulClient";
 import {
@@ -68,11 +69,11 @@ const ServiceAndProdeuctsSection: React.FunctionComponent = async () => {
                             )
                             .map((produk, index) => (
                                 <div key={index} className="p-4">
-                                    <CardService
+                                    <CardProduct
                                         key={index}
                                         idx={index}
                                         title={produk.fields.title}
-                                        eta={produk.fields.grade}
+                                        grade={produk.fields.grade}
                                         // price={produk.fields.price.toLocaleString()}
                                         src={`https:${
                                             (

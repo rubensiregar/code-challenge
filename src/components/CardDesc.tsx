@@ -27,6 +27,7 @@ const CardDesc: React.FunctionComponent<ICardDescProps> = ({
                     objectPosition="center"
                     className="rounded-md"
                     quality={20}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </div>
         );

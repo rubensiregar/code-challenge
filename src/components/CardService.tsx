@@ -32,6 +32,7 @@ const CardService: React.FunctionComponent<ICardServiceProps> = ({
                     className="rounded-md"
                     objectPosition="top"
                     quality={10}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </div>
             <div className="flex flex-col">

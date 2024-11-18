@@ -19,17 +19,19 @@ const TeamsPage = () => {
         <div className="min-h-[75svh]">
             <Breaker title="meet our team members" />
 
-            <section className="p-12 gap-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-                {users.map((u: any, i: number) => (
-                    <CardMember
-                        src={u.picture.thumbnail}
-                        name={`${u.name.first} ${u.name.last}`}
-                        city={u.location.city}
-                        cell={u.cell}
-                        i={i}
-                        key={i}
-                    />
-                ))}
+            <section className="min-h-[500svh]">
+                <div className=" md:min-h-screen p-12 gap-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+                    {users.map((u: any, i: number) => (
+                        <CardMember
+                            src={u.picture.thumbnail}
+                            name={`${u.name.first} ${u.name.last}`}
+                            city={u.location.city}
+                            cell={u.cell}
+                            i={i}
+                            key={i}
+                        />
+                    ))}
+                </div>
             </section>
         </div>
     );

@@ -18,7 +18,7 @@ const CardMember: React.FunctionComponent<ICardMemberProps> = ({
 }) => {
     return (
         <div
-            className="text-center gap-4 min-w-[90%] p-8 rounded-2xl shadow-lg flex flex-col items-center bg-violet-100"
+            className="h-fit text-center gap-4 min-w-[90%] p-8 rounded-2xl shadow-lg flex flex-col items-center bg-violet-100"
             key={i}
         >
             <div className="relative size-40 rounded-full">

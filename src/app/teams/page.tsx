@@ -16,10 +16,10 @@ const TeamsPage = () => {
     console.log("DATA RANDOM", users);
 
     return (
-        <div className="min-h-[75svh]">
+        <div className="">
             <Breaker title="meet our team members" />
 
-            <section className="min-h-[500svh]">
+            <section className="min-h-[350svh] md:min-h-[175svh] lg:min-h-[100svh]">
                 <div className=" md:min-h-screen p-12 gap-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                     {users.map((u: any, i: number) => (
                         <CardMember

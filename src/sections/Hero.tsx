@@ -17,12 +17,13 @@ const HeroSection: React.FunctionComponent = () => {
             </div>
             <div className="h-[60vh] bg-violet-200 relative">
                 <Image
-                    quality={20}
-                    src="/img/hero/hero-4.jpg"
+                    quality={40}
+                    src="/img/hero/hero-4.webp"
                     alt="hero"
                     objectFit="cover"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 10vw"
+                    // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 30vw"
+                    priority={true}
                 />
             </div>
         </section>
